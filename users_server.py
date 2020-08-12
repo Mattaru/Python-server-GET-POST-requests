@@ -22,7 +22,7 @@ def show_albums(artist):
 
     return response
 
-@route("/albums/", method = "POST")
+@route("/albums", method = "POST")
 def new_album():
     album = {
         "year": request.forms.get("year"),
